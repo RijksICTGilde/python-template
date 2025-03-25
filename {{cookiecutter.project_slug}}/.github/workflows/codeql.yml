@@ -8,7 +8,7 @@ on:
 
 jobs:
   analyze:
-    name: Analyze (${{ matrix.language }})
+    name: Analyze (${{ '{{' }} matrix.language }})
     runs-on: 'ubuntu-latest'
     timeout-minutes: 360
     permissions:
@@ -29,10 +29,10 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
       with:
-        languages: ${{ matrix.language }}
-        build-mode: ${{ matrix.build-mode }}
+        languages: ${{ '{{' }} matrix.language }}
+        build-mode: ${{ '{{' }} matrix.build-mode }}
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
-        category: "/language:${{matrix.language}}"
+        category: "/language:${{ '{{' }}matrix.language}}"
