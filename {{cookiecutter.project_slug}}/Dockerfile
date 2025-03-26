@@ -5,7 +5,7 @@ FROM  --platform=$BUILDPLATFORM python:${PYTHON_VERSION} as project-base
 LABEL maintainer=ai-validatie@minbzk.nl \
       organization=MinBZK \
       license=EUPL-1.2 \
-      io.docker.minbzk.name=python-project-template
+      io.docker.minbzk.name={{cookiecutter.project_slug}}
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
@@ -44,7 +44,7 @@ RUN coverage report --fail-under 95
 
 FROM project-base as production
 
-COPY ./python_project /app/python_project
+COPY ./{{cookiecutter.project_python_slug}} /app/{{cookiecutter.project_python_slug}}
 
 # change this to a usefull command
-CMD ["python", "-m", "python_project" ]
+CMD ["python", "-m", "{{cookiecutter.project_python_slug}}" ]

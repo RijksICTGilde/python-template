@@ -8,11 +8,11 @@ categories:
 description:
   en:
     features:
-      - Python Template
-    genericName: python_project
+      - {{cookiecutter.project_name}}
+    genericName: {{cookiecutter.project_python_slug}}
     longDescription: |
-      This a an example python template project.
-    shortDescription: Python Template project
+      {{cookiecutter.project_long_description}}
+    shortDescription: {{cookiecutter.project_short_description}}
 developmentStatus: concept
 legal:
   license: EUPL-1.2
@@ -24,9 +24,9 @@ maintenance:
   contacts:
     - name: AI Validatie
   type: community
-name: python_project
+name: {{cookiecutter.project_python_slug}}
 platforms:
   - web
 releaseDate: '2024-04-25'
 softwareType: standalone/web
-url: 'https://github.com/MinBZK/python-project-template'
+url: 'https://github.com/MinBZK/{{cookiecutter.project_slug}}'

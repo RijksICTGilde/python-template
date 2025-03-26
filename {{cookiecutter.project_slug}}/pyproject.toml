@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "python_project"
+name = "{{cookiecutter.project_python_slug}}"
 version = "0.1.0"
 description = ""
 authors = ["ai-validation-team <ai-validation@minibzk.nl>"]
@@ -46,7 +46,7 @@ fail_under = 95
 
 [tool.coverage.html]
 directory = "htmlcov"
-title = "python_project"
+title = "{{cookiecutter.project_python_slug}}"
 
 
 [tool.pytest.ini_options]
