@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "{{cookiecutter.project_python_slug}}"
-version = "0.1.0"
-description = ""
-authors = ["ai-validation-team <ai-validation@minibzk.nl>"]
+version = "{{cookiecutter.version}}"
+description = "{{cookiecutter.project_long_description}}"
+authors = [
+    {name = "{{cookiecutter.full_name}}", email = "{{cookiecutter.email_address}}"}
+]
 readme = "README.md"
 
 [tool.poetry.dependencies]

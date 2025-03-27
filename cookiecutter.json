@@ -1,6 +1,6 @@
 {
   "full_name": "Your name",
-  "email": "jij@rijksoverheid.nl",
+  "email_address": "jij@rijksoverheid.nl",
   "github_username": "MinBZK",
   "github_topic": "@MinBZK/ai-validation-team",
   "project_name": "Python template",
@@ -8,9 +8,11 @@
   "project_python_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "Python template.",
   "project_long_description": "Python template contains all the boilerplate you need to create a Python package.",
-  "pypi_username": "{{ cookiecutter.github_username }}",
   "version": "0.0.1-SNAPSHOT",
-  "use_django": "n",
   "command_line_interface": ["Typer", "Argparse", "No command-line interface"],
-  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+  "__prompts__": {
+    "github_username": "GitHub organization or username",
+    "project_name": "Short project name, will be used to generate the Python project name"
+  }
 }

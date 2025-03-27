@@ -2,7 +2,8 @@
 
 ## Description
 
-This is a template repository that can be used for Python 3.11 projects and uses the Poetry package manager. By default this project sets up the following:
+This is a repository that can be used for Python 3.11 projects and uses the Poetry package manager.  
+By default this project sets up the following:
 
 * Devcontainers for VSCode users
 * Github community health files
@@ -16,10 +17,9 @@ This is a template repository that can be used for Python 3.11 projects and uses
 * A basic Docker setup
 * publiccode.yml
 
-## How to use this template repository
+## Please chack the following before doing any development
 
-When creating a new Repository select this template repository as the base.
-* change author and name in pyproject.toml
-* change labels in Dockerfile to appropriate values
+* Check/change author and name in pyproject.toml
+* Check/change labels in Dockerfile to appropriate values
 * Verify the License used
-* Change publiccode.yml to your needs
+* Check/change publiccode.yml to your needs
