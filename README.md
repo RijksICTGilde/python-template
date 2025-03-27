@@ -22,19 +22,3 @@ Steps for creating a new project:
 * Checkout this project
 * Run ```cookiecutter minbzk-python-template```
 * Answer the questions
-
-## How to use this template repository
-
-When creating a new Repository select this template repository as the base.
-
-After the repository is created make sure to change the following (we may need to consider copier to automate this):
-
-* change the owners in the the .github/CODEOWNERS
-* run a global rename command where you rename new_name to your project name
-    * macos: `find . -type f -not -path "./.git/*" -exec  sed -i '' "s/python_project/new_name/g" {} \;`
-    * linux: `find . -type f -not -path "./.git/*" -exec  sed -i "s/python_project/new_name/g" {} \;`
-* rename the python_project/ folder to your project name
-* change author and name in pyproject.toml
-* change labels in Dockerfile to appropriate values
-* Verify the License used
-* Change publiccode.yml to your needs
