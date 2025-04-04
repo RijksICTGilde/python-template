@@ -14,6 +14,10 @@ By default, it sets up a project with the following:
 * A basic Docker setup
 * publiccode.yml
 
+Optionally you can set up:
+
+* Django
+
 ## How to use this template
 This template uses cookiecutter to create projects from it.  
 Cookiecutter installation instructions can be found at https://cookiecutter.readthedocs.io/en/latest/installation.html  
