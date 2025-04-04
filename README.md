@@ -1,5 +1,6 @@
-# minbzk-python-template
-This is a template repository that can be used for Python 3.11 projects and uses the Poetry package manager. By default this project sets up the following:
+# python-template
+This is a template repository that can be used for Python 3.11 projects that use the Poetry package manager.
+By default, it sets up a project with the following:
 
 * Devcontainers for VSCode users
 * Github community health files
@@ -20,5 +21,5 @@ More information on cookiecutter on https://cookiecutter.io/
 
 Steps for creating a new project: 
 * Checkout this project
-* Run ```cookiecutter minbzk-python-template```
+* Run ```cookiecutter python-template```
 * Answer the questions
